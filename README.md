@@ -4,7 +4,7 @@
 
 In this tutorial, we aim to automate the deployment of an AWS Lambda function using GitHub Actions. AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources. We need Lambda functions for building scalable, event-driven applications without having to manage the server infrastructure. By leveraging GitHub Actions, we can streamline our deployment process, ensuring that every change pushed to our repository is automatically deployed to AWS Lambda.
 
-![](./images/new-9.png)
+![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-9.png)
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Before starting, ensure you have the following:
    - Choose Node.js as the runtime (e.g., Node.js 20.x).
    - Click on "Create function".
 
-   ![](./images/new-1.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-1.png)
 
 2. **Add an API Gateway Trigger**:
    - In the Lambda function page, click on "Add trigger".
@@ -35,11 +35,11 @@ Before starting, ensure you have the following:
    - Set the API type to "HTTP API".
    - Click on "Add".
 
-   ![](./images/new-2.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-2.png)
 
    - Note the "API Gateway URL" for testing later.
 
-   ![](./images/new-3.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-3.png)
    
 
 
@@ -56,7 +56,7 @@ Before starting, ensure you have the following:
    - Click on "Deploy".
    - Test the endpoint by accessing the API Gateway URL in your browser.
 
-   ![](./images/new-4.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-4.png)
 
 ### Step 2: Create a GitHub Repository and Add AWS Secrets
 
@@ -68,7 +68,7 @@ Before starting, ensure you have the following:
    - Navigate to **Secrets and variables** > **Actions** > **New repository secret**.
    - Add `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` with your AWS credentials.
 
-   ![](./images/new-7.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-7.png)
 
 ### Step 3: Local Project Setup
 
@@ -235,14 +235,14 @@ jobs:
    - Go to the **Actions** tab in your GitHub repository.
    - Ensure the workflow runs successfully. Check the logs for each step to verify that the steps were executed correctly.
 
-   ![](./images/new-8.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-8.png)
 
 ### Step 7: Test the Output
 
 1. **Test the API Endpoint**:
    - Access the API Gateway URL again to verify that the Lambda function is working as expected with the new deployment.
 
-   ![](./images/new-6.png)
+   ![](https://github.com/Galadon123/-Lambda-function-using-github-actions/blob/main/images/new-6.png)
 
 ## Conclusion
 
